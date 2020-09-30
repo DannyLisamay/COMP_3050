@@ -1,0 +1,32 @@
+﻿Danny Lisamay
+Email: Danny_Lisamay@student.uml.edu
+hw#3
+Write Up
+
+I believe my degree of success with this project is 100%.
+
+My approach was first relearn how assembly. (Most time was used on this) 
+I first had to understand the code and for the MIC1 assembly work.
+I followed the “UsingMic1Tools.pdf” to first test the given sample code. (Iterative solution) 
+After getting sample code to work. I had to understand how sample code related to the C given code.
+I then worked off the sample code, I changed the ITER “function” from sample code to  my own RECUR “function” (Seen below). It works almost the same as the ITER, instead of a jump, I used a recursive call to RECUR. The base case to escape the recursive funtion is 0. (JZER RTN:)
+
+RECUR: LODD arg: 
+    JZER RTN:       
+    SUBD c1:
+STOD arg:       
+    LODD fm2:       ; arg must be >= 2, fm2 initially fib(0)
+    ADDD fm1:       ; fm1 initially fib(1), so AC = fm2+fm1
+    STOD tmp:       ; store this AC to tmp:
+    LODD fm1:       ; now load AC with fib(n-1)
+    STOD fm2:       ; replace old fib(n-2) with AC
+    LODD tmp:       ; load AC with tmp: becomes fib(n-1)
+    STOD fm1:       ; store AC as next fib(n-1) to fm1
+    CALL RECUR:
+RTN:    LODD tmp:       ; load AC with tmp: .. final result
+    RETN
+
+Ran into many issues, I do not excel with assembly language and have little experience. 
+    • Off by one.
+    • First I was push fib values onto stack and stack was not clean. Filled  “f0:” with garbage values.
+

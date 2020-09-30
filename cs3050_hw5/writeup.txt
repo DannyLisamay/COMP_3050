@@ -1,0 +1,33 @@
+﻿Danny Lisamay
+Email: Danny_Lisamay@student.uml.edu
+hw#5
+Write Up
+
+
+I believe my degree of success with this project is 8.5/10. 
+I believe this because my program is printing out unintended results. But the idea is correct.
+
+First step was to finish the “Addinput function”, adding the two binary functions. Binum1 and binum2.
+This giving us the sum in binary value. This will call the convert function. 
+
+Then I created a covert function. The idea of this function was two take the binary number and convert into charters that that can be outputted. 
+To do this, I went to the address  of the sum, then using the div function, took eat digit and converted it, by adding 48 and pushing in on to the stack.
+
+Then I created two print functions. A normal print function and a print function for my sum.
+The sum took eat ASCI digit on the sum and print it out onto the screen. The next will print out normal strings.
+
+Also lastly made an overload function which printed out the overload string and halted.
+
+I do not deserve full credit because I believe my covert fun	tion or printsum function is holding garbage values or its not cleaning up the stack correctly. asl
+
+cnvert: lodd biansw:
+jzer cvtFin:
+div 10
+addd numoff:
+push
+lodd count:
+addd c1:
+stod count:
+call cnvert:
+
+Also can be that im not understanding the div function. I believe its supposed to div and leave remainder in AC. If that is not correct then that is the reason why my program is not working as intended.

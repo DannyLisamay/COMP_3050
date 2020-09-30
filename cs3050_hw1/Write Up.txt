@@ -1,0 +1,40 @@
+﻿Danny Lisamay
+Email: Danny_Lisamay@student.uml.edu
+hw#1
+Write Up
+
+I believe my degree of success with this project is 100%.
+
+    • My approach to this hw was to first understand the given sample code.
+        ◦ From the sample code I understood that it scanned an input then stored it in union named float_32, also stored the given input into a string named bit_string.
+    • Next I needed to create two strings named mantisa_string and exponent_string.
+        ◦ The two strings are a partition of the string bit_string.
+        ◦ I did this by using for loops. 
+            ▪ First by creating two empty string. Then filling it with intended values. (seen below)
+	
+j = 0;
+for( i = 12; i <= 39; i++){
+mantisa_string[j] = bit_string[i];
+j++;
+}
+
+k = 0;
+for( i = 2; i <= 10; i++){
+exponent_string[k] = bit_string[i];
+k++;
+}
+
+    • Next I needed to print the each given number/input int the intended format given in the assignment.
+        ◦ I used printf and converted the f_bits int float_32. (seen below)
+        ◦ 
+printf("The floating value for INPUT_NUMBER is broken out as:\n");
+printf("Mantisa: 0x%-15x or: %s\n", float_32.f_bits.mantissa, mantisa_string);
+printf("Exponent: 0x%-15x or: %s\n", float_32.f_bits.exponent, exponent_string);
+printf("Sign: %-15d or: %d\n", float_32.f_bits.sign, float_32.f_bits.sign);
+printf("In base10: %-15f or: %s\n", float_32.floating_value_in_32_bits, bit_string);
+}
+
+
+I ran into no issues.
+
+
